@@ -41,10 +41,13 @@ Prefiero Fira Code NF, Pero sientete libre de probar alguna otra
 ## look and feel
 
 **Cambios en Git**
+
 ![Iconos con git](git.png)
 
 **Entorno de python**
+
 ![Entorno python](python.png)
 
 **Comandos sugeridos y pendientes en github**
+
 ![Historial](change.png)
