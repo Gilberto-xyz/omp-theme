@@ -38,6 +38,13 @@ Instalar las [**Nerd Fonts**](https://www.nerdfonts.com/)
 
 Prefiero Fira Code NF, Pero sientete libre de probar alguna otra
 
+Activar los iconos
+```bash
+Install-Module -Name Terminal-Icons -Repository PSGallery
+```
+
+Referencia completa [**Terminal Icons**](https://github.com/devblackops/Terminal-Icons)
+
 ## look and feel
 
 **Cambios en Git**
