@@ -58,3 +58,7 @@ Referencia completa [**Terminal Icons**](https://github.com/devblackops/Terminal
 **Comandos sugeridos y pendientes en github**
 
 ![Historial](change.png)
+
+**Version 2 owo**
+
+![Iconos con git](nice.png)
