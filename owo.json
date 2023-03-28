@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "white",
+          "properties": {
+            "fetch_version": false
+          },
+          "style": "plain",
+          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }})",
+          "type": "python"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "lightBlue",
+          "style": "plain",
+          "template": " ✨ ",
+          "type": "text"
+        },
+        {
+          "foreground": "red",
+          "style": "plain",
+          "template": " % ",
+          "type": "root"
+        },
+        {
+          "style": "plain",
+          "template": "<cyan>{{ .UserName }}</> ",
+          "type": "session"
+        },
+        {
+          "foreground": "#7B68EE",
+          "properties": {
+            "style": "agnoster_full",
+            "home_icon": "\ue5ff home",
+            "folder_icon": "\uf07b",
+            "folder_separator_icon": " \u276f "
+          },
+          "style": "plain",
+          "template": "<green>in </>{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "style": "plain",
+          "template": "<darkGray>on</> <white>git:</><cyan>{{ .HEAD }}</>{{ if .Working.Changed }}<red> x</>{{ end }} ",
+          "type": "git",
+          "properties": {
+            "fetch_status": true
+          }
+        },
+        {
+          "foreground": "#FFE082",
+          "style": "plain",
+          "properties": {
+            "template": "[{{ .CurrentDate | date .Format }}]",
+            "time_format": "3:04 pm"
+          },
+          "type": "time"
+        },
+        {
+          "foreground": "#48D1CC",
+          "properties": {
+            "branch_icon": "",
+            "fetch_upstream_icon": false
+          },
+          "style": "plain",
+          "template": "HEAD:{{ .UpstreamIcon }}{{ .HEAD }} ",
+          "type": "git"
+        },
+        {
+          "foreground": "#7FFFD4",
+          "foreground_templates": [
+            "{{ if gt .Code 0 }}#E84855{{ end }}"
+          ],
+          "properties": {
+            "always_enabled": true
+          },
+          "style": "plain",
+          "template": "<#66CDAA>\u276f</><#76EEC6>\u276f</><foreground>\u276f</> ",
+          "type": "exit"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": false,
+      "segments": [
+        {
+          "foreground": "lightRed",
+          "style": "plain",
+          "template": "$",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
