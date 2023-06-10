@@ -8,10 +8,7 @@
           "foreground": "white",
           "properties": {
             "fetch_version": false
-          },
-          "style": "plain",
-          "template": "({{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }})",
-          "type": "python"
+          }
         }
       ],
       "type": "prompt"
@@ -87,6 +84,17 @@
           "style": "plain",
           "template": "<#66CDAA>\u276f</><#76EEC6>\u276f</><foreground>\u276f</> ",
           "type": "exit"
+        },
+        {
+          "type": "python",
+          "style": "diamond",
+          "leading_diamond": " \ue0b6",
+          "foreground": "#ffffff",
+          "background": "#06d6a0",
+          "properties": {
+            "template": "\uE235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}"
+          },
+          "trailing_diamond": "\ue0b4"
         }
       ],
       "type": "prompt"
