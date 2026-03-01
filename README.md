@@ -69,5 +69,5 @@ Referencia completa [**Terminal Icons**](https://github.com/devblackops/Terminal
 
 Tema: `v3-extra.json` (fusion neon/futurista).
 
-![Version 3 extra](v3-extra-real.png)
+![Version 3 extra](https://raw.githubusercontent.com/Gilberto-xyz/omp-theme/main/v3-extra-real.png)
 
