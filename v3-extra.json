@@ -1,0 +1,67 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "text",
+          "style": "diamond",
+          "background": "#00D084",
+          "foreground": "#EAF7F2",
+          "leading_diamond": "\ue0b6",
+          "trailing_diamond": "\ue0b4",
+          "template": " <#003543> \ue795 </> <#D000FF>Shell</> "
+        },
+        {
+          "type": "os",
+          "style": "powerline",
+          "background": "#0F0F0F",
+          "foreground": "#FF9D00",
+          "powerline_symbol": "\ue0b0",
+          "template": " {{ .Icon }} {{ .HostName }} "
+        },
+        {
+          "type": "path",
+          "style": "powerline",
+          "background": "#141414",
+          "foreground": "#FFE066",
+          "powerline_symbol": "\ue0b0",
+          "options": {
+            "folder_icon": "",
+            "folder_separator_icon": "\\",
+            "home_icon": "~",
+            "style": "full"
+          },
+          "template": " \uf115 {{ .Path }} "
+        },
+        {
+          "type": "executiontime",
+          "style": "powerline",
+          "background": "#1A1A1A",
+          "foreground": "#FF9D00",
+          "powerline_symbol": "\ue0b0",
+          "options": {
+            "always_enabled": true,
+            "threshold": 0
+          },
+          "template": " \ueba2 {{ .FormattedMs }} "
+        },
+        {
+          "type": "time",
+          "style": "powerline",
+          "background": "#0D0D0D",
+          "foreground": "#FFD24A",
+          "powerline_symbol": "\ue0b0",
+          "options": {
+            "time_format": "3:04 PM"
+          },
+          "template": " \uf017 {{ .CurrentDate | date .Format }} "
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "version": 4
+}

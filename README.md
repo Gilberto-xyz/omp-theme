@@ -7,6 +7,8 @@
 ## Tema personalizado
 
 > .ultron.json
+> owo.json
+> v3-extra.json
 
 Basado en el tema de [M365Princess](https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/M365Princess.omp.json
 )
@@ -18,7 +20,7 @@ clear
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
-Set-PoshPrompt -Theme ~/.ultron.json
+Set-PoshPrompt -Theme ~/v3-extra.json
 Import-Module -Name Terminal-Icons
 Enable-PoshTransientPrompt
 Enable-PoshLineError
@@ -27,7 +29,7 @@ Enable-PoshLineError
 >- clear para borrar el mensaje de bienvenida de powershell
 >- Set-PSReadLineOption -PredictionSource History para que se muestren las opciones anteriores
 >- Set-PSReadLineOption -PredictionViewStyle ListView para que se muestren sugerencias en forma de lista
->- Set-PoshPrompt -Theme ~/.ultron.json para usar el tema personalizado
+>- Set-PoshPrompt -Theme ~/v3-extra.json para usar el tema personalizado
 >- Import-Module -Name Terminal-Icons para usar los iconos de la terminal
 >- Enable-PoshTransientPrompt para que se muestre solo una vez la linea personalizada de la terminal
 >- Enable-PoshLineError para que se muestre el error en la terminal
@@ -62,3 +64,7 @@ Referencia completa [**Terminal Icons**](https://github.com/devblackops/Terminal
 **Version 2 owo**
 
 ![Iconos con git](nice.png)
+
+**Version 3 extra**
+
+Tema: `v3-extra.json` (fusion neon/futurista).
