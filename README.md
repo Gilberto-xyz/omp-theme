@@ -40,6 +40,20 @@ Instalar las [**Nerd Fonts**](https://www.nerdfonts.com/)
 
 Prefiero Fira Code NF, Pero sientete libre de probar alguna otra
 
+### Fuentes que me gustaron (yo del futuro)
+
+- **Monaspace Nerd Font**  
+  Descarga directa: https://github.com/ryanoasis/nerd-fonts/releases/latest/download/Monaspace.zip  
+  Nombre comun en Windows: `MonaspiceKr NFP`
+
+- **IBM Plex Mono Nerd Font**  
+  Descarga directa: https://github.com/ryanoasis/nerd-fonts/releases/latest/download/IBMPlexMono.zip  
+  Nombre comun en Windows: `BlexMono Nerd Font Mono`
+
+Despues de instalar en Windows:
+1. Cierra y abre tu terminal/VS Code.
+2. Selecciona la fuente por su nombre exacto en la configuracion.
+
 Activar los iconos
 ```bash
 Install-Module -Name Terminal-Icons -Repository PSGallery
